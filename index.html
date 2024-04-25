@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form login</title>
-    <!--impotando arquivo css-->
+    <!--importando arquivo css-->
     <link rel="stylesheet" href="css/styles.css">
+    <!--importando os icones-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body>
     <header>
-   <h1 class="logo">logo</h1>
-      
-   <nav class="menu">
-    <a href="#">home</a>
-    <a href="#">sobre</a>
-    <a href="#">serviços</a>
-    <a href="#">contatos</a>
-    <button class="bnt-login">login</button>
-   </nav>
-     </header>
+        <h2 class="logo">Logo</h2>
+
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contatos</a>
+            <button class="bnt-login">login</button>
+        </nav>
+    </header>
+
+    <main>
+        <span class="form-box login"></span>
+
+        <div class="form-box login">
+            <h2>login</h2>
+            <ion-icon name="heart"></ion-icon>
+            <form>
+                <div class="input-box">
+                    <input type="email" id="email">
+                    <label for="email">email</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" id="senha">
+                    <label for="senha">senha</label>
+                </div>
+                <div class="lembrar-senha">
+                    <input type="checkbox" id="lembrar">  
+                    <label for="lembrar">lembrar-me</label>
+                    <a href="#">Esqueceu a senha?</a>
+                  
+                </div>
+                <button  class="bnt-login"  type="submit">login</button>
+                <p>não tem conta? cadastre-se</p>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+
+            </form>
+        </div>
+    </main>
 </body>
+
 </html>
