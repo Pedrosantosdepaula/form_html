@@ -10,28 +10,50 @@ body {
 
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color:aquamarine;
+    background-color: aquamarine;
+    
 }
-body>header>.logo{
+
+
+.logo {
+    font-size: 2em;
+    color: white;
+}
+nav.menu a{
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:  40px;
 
 }
+button.bnt-login{
+    width: 130px;
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 500;
+    color:white ;
+    background-color: blueviolet;
+}
+
+
 main{
     position: relative;
     width: 400px;
     height: 400px;
-    border: 2px solid rgba(255,255,255,.5);
+    border: 2px solid rgba(255, 255, 255, .5);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
- 
+    background-color: rgb(153, 93, 209);
+
 
 }
